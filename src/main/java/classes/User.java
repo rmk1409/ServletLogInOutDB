@@ -5,18 +5,18 @@ package classes;
  */
 public class User {
     private int id;
-    private String name, password, citizenship, interests, moreInterests;
+    private String login, password, citizenship, interests, moreInterests;
 
-    public User(String name, String password, String citizenship, String interests, String moreInterests) {
-        this.name = name;
+    public User(String login, String password, String citizenship, String interests, String moreInterests) {
+        this.login = login;
         this.password = password;
         this.citizenship = citizenship;
         this.interests = interests;
         this.moreInterests = moreInterests;
     }
 
-    public User(int id, String name, String password, String citizenship, String interests, String moreInterests) {
-        this(name, password, citizenship, interests, moreInterests);
+    public User(int id, String login, String password, String citizenship, String interests, String moreInterests) {
+        this(login, password, citizenship, interests, moreInterests);
         this.id = id;
     }
 
@@ -28,12 +28,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getLogin() {
+        return login;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getPassword() {
